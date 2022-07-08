@@ -11,17 +11,52 @@
     <div class="wrapper">
         <div class="container">
             <img src="image/index-background-desktop.jpg" alt="cat" class="background-intro">
-            <header class="header">
-                <a href="#">
-                    <img src="image/logo-desktop.png" alt="Логотип" class="logo">
-                </a>
-                <nav class="menu">
-                    <ul class="menu_list">
-                        <li class="menu_link">Главная</li>
-                        <li class="menu_link">Каталог продукции</li>
-                        <li class="menu_link">Подбор программы</li>
-                    </ul>
-                </nav>
+            <header class="header" id="intro">
+                <div class="header-main">
+                    <a href="#">
+                        <img src="image/logo-desktop.png" alt="Логотип" class="logo">
+                    </a>
+                    <nav class="menu">
+                        <ul class="menu_list">
+                            <li>
+                                <a href="#intro" class="menu_link">Главная</a>
+                            </li>
+                            <li>
+                                <a href="#product-catalog" class="menu_link">Каталог продукции</a>
+                            </li>
+                            <li>
+                                <a href="#program-selection" class="menu_link">Подбор программы</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div> 
+
+                <div class="header-mobile">
+                    <a href="#">
+                        <img src="image/logo-mobile.png" alt="Логотип">
+                    </a>
+                    <a href="#">
+                        <img src="image/footer-logo 2.png" alt="Имя лого">
+                    </a>
+
+                    <div class="header__burger">
+                            <span></span> 
+                    </div>
+                    <nav class="header__burger-menu">
+                        <ul class="burger-menu_list">
+                            <li>
+                                <a href="#intro" class="burger-menu_link">Главная</a>
+                            </li>
+                            <li>
+                                <a href="#product-catalog" class="burger-menu_link">Каталог продукции</a>
+                            </li>
+                            <li>
+                                <a href="#program-selection" class="burger-menu_link">Подбор программы</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                
             </header>
 
         <!-- Intro block -->
@@ -29,12 +64,12 @@
             <div class="intro">
                 <div class="intro_block">
                     <h1 class="intro_title general_title">
-                        Функциональное питание для котов
+                        Функциональное <br> питание для котов
                     </h1>
                     <span class="intro_subtitle">
                         Занялся собой? Займись котом!
                     </span>
-                    <button class="btn">Подобрать программу</button>
+                    <button onclick="document.location='#'" class="btn">Подобрать программу</button>
                 </div>
                 <img src="image/index-can.png" alt="Банка с питанием" class="img_can">
             </div>
@@ -43,32 +78,38 @@
     <!-- Block weight correct -->
 
         <div class="container">
-            <div class="block_weight_correct">
+            <div class="block_weight_correct" id="product-catalog">
                 <div class="weight_correct_program">
-                    <div class="weight_correct_row">
-                        <img src="image/cat_back_vert.png" alt="Чёрный кот" class="dark_cat">
-                        <h2 class="weight_correct_title">Похудение</h2>
-                    </div>
+                    <div class="weight_correct_program_body">
+                        <div class="weight_correct_row">
+                            <img src="image/cat_back_vert.png" alt="Чёрный кот" class="dark_cat">
+                            <h2 class="weight_correct_title">Похудение</h2>
+                        </div>
                     
-                    <p class="weight_correct_descr">
-                        Ваш кот весит больше собаки и почти утратил способность 
-                        лазить по деревьям? Пора на диету! Cat Energy Slim поможет 
-                        вашему питомцу сбросить лишний вес.
-                    </p>
-                    <span class="catalog">Каталог slim</span>
+                        <p class="weight_correct_descr">
+                            Ваш кот весит больше собаки и почти утратил способность 
+                            лазить по деревьям? Пора на диету! Cat Energy Slim поможет 
+                            вашему питомцу сбросить лишний вес.
+                        </p>
+                        <span class="catalog">Каталог slim</span>
+                    </div>
+                     <img src="image/cat_back.png" alt="Чёрный кот" class="dark_cat-tablet">
                 </div>
+
                 <div class="weight_correct_program">
-                    <div class="weight_correct_row">
-                        <img src="image/cat_back_goriz.png" alt="Чёрный кот" class="dark_cat">
-                        <h2 class="weight_correct_title">Набор массы</h2>
+                    <div class="weight_correct_program_body">
+                        <div class="weight_correct_row">
+                            <img src="image/cat_back_goriz.png" alt="Чёрный кот" class="dark_cat">
+                            <h2 class="weight_correct_title">Набор массы</h2>
+                        </div>
+                        <p class="weight_correct_descr">
+                            Заработать авторитет среди дворовых котов и даже собак? 
+                            Серия Cat Energy Pro поможет вашему коту нарастить 
+                            необходимые мышцы!
+                        </p>
+                        <span class="catalog">Каталог slim</span>
                     </div>
-                    <p class="weight_correct_descr">
-                        Ваш кот весит больше собаки и почти утратил способность 
-                        лазить по деревьям? Пора на диету! Cat Energy Slim поможет 
-                        вашему питомцу сбросить лишний вес.
-                    </p>
-                    <span class="catalog">Каталог slim</span>
-                    
+                    <img src="image/cat_back (1).png" alt="Чёрный кот" class="dark_cat-tablet">
                 </div>
             
             </div>
@@ -111,9 +152,9 @@
 
     <!-- Block example -->
 
-        <div class="container">
+        <div class="container container-example" id="program-selection">
             <h1 class="general_title">Живой пример</h1>
-        </div>
+        
             <div class="block_example">
                 <div class="container container-block_benefit">
                     
@@ -124,14 +165,20 @@
                         При этом он не менял своих привычек и 
                         по-прежнему спит по 16 часов в день. 
                         </p>
-                        <div class="example_weight_img">
-                            <img src="image/module.png" alt="" class="weight_img">
-                            <img src="image/module2.png" alt="" class="weight_img">
+                        <div class="example_weight">
+                            <div class="example_weight_img">
+                                <img src="image/module.png" alt="" class="weight_img">
+                                <img src="image/module2.png" alt="" class="weight_img">
+                            </div>
+                            <div class="example_weight-expenses">
+                                <span>Затраты на питание: </span><span>15 000 руб.</span>
+                            </div>
+                            
                         </div>
-                        <span>Затраты на питание:</span><span>15 000 руб.</span>
-
                     </div>
                 </div>
+
+        
                 <div class="block_big_cat">
                     <img src="image/image_cat_desktop.png" alt="" class="big_cat">
                     <div class="slider">
@@ -141,7 +188,10 @@
                     </div>
                    
                 </div>
+                
             </div>
+
+        </div>
 
         <!-- Map -->
 
@@ -149,40 +199,56 @@
                 <div class="map-title">
                     <h1 class="general_title">Как нас найти</h1>
                     <img class="img-map" src="image/map-icon.png" alt="Иконка гугл карты">
+                </div> 
+                <div class="invite">
+                    <div class="invite__title">приглашаем <br> 
+                        к сотрудничеству <br> 
+                        дилеров!</div>
+                    <div class="invite__address">
+                        <span>проспект Владимира <br>
+                            Маяковского 6</span>
+                        <span>Киев</span>
+                    </div>
                 </div>
+               
             </div>
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.762030622736!2d30.591574145256544!3d50.501386593887595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d1b272fb44b5%3A0x37dca60be6f89102!2z0L_RgNC-0YHQv9C10LrRgiDQktC-0LvQvtC00LjQvNC40YDQsCDQnNCw0Y_QutC-0LLRgdGM0LrQvtCz0L4sIDYsINCa0LjRl9CyLCDQo9C60YDQsNGX0L3QsCwgMDIwMDA!5e0!3m2!1suk!2ses!4v1652110608302!5m2!1suk!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
              </div>
+                    
+    </div>
+    
+    <script src="JS/script.js"></script>
+    <script src="https://kit.fontawesome.com/02534f7fdf.js" crossorigin="anonymous"></script>
+</body>
 
         <!-- Footer -->
 
-            <footer class="footer">
-                <div class="container">  
-                  <div class="footer-content">
-                    <a href="#">
-                        <img src="image/footer-logo 2.png" alt="Логотип" class="footer_logo">
-                    </a>
-                    <div class="social-icons">
-                        <a class="social-item" href="#" target="blank">
-                            <i class="fa fa-2x fa-vk"></i>
-                        </a>
-                        <a class="social-item" href="#" target="blank">
-                            <i class="fa fa-2x fa-instagram"></i>
-                        </a>
-                        <a class="social-item" href="#" target="blank">
-                            <i class="fa fa-2x fa-facebook-f"></i>
-                        </a>
-                    </div>
-                    <span >
-                        <a class="footer-phone" href=”#”>+38 (044) 123-45-67</a>
-                    </span>
-                  </div>
-                </div>
-            </footer>
-       
+<footer class="footer">
+    <div class="container">  
+      <div class="footer-content">
+        <div class="footer_logo">
+            <a href="#">
+                <img src="image/footer-logo 2.png" alt="Логотип">
+            </a>
+        </div>
+                    
+        <div class="social-icons">
+            <a class="social-item" href="#" target="blank">
+                <i class="fa fa-2x fa-vk"></i>
+            </a>
+            <a class="social-item" href="#" target="blank">
+                <i class="fa fa-2x fa-instagram"></i>
+            </a>
+            <a class="social-item" href="#" target="blank">
+                <i class="fa fa-2x fa-facebook-f"></i>
+            </a>
+        </div>
+        <div class="footer-phone">
+            <a href=”#”>+38 (044) 123-45-67</a>
+        </div>
+      </div>
     </div>
-    
-    <script src="https://kit.fontawesome.com/02534f7fdf.js" crossorigin="anonymous"></script>
-</body>
+</footer>
+
 </html>
