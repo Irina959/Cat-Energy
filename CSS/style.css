@@ -285,7 +285,8 @@ a, li, button {
     max-width: 100%;
 }
 .container-example h1 {
-   margin-left: 5%;
+   max-width: 1220px;
+   margin: 0 auto;
 }
 .block_example {
     background-color: #F2F2F2;
